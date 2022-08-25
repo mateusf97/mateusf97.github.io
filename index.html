@@ -8,6 +8,17 @@
     <link rel="shortcut icon" href="content/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    
+    <div id="sucess-authenticated"></div>
 </body>
+<script>
+    let password = prompt('Enter code to continue');
+
+    if (password == '1234') {
+        document.getElementById("sucess-authenticated").innerHTML =
+        "You are now authenticated.";
+    } else {
+        alert('Please try again!');
+        window.location = window.location;
+    }
+</script>
 </html>
