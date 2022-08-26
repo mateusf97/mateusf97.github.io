@@ -1,20 +1,43 @@
-body {
-  background: black;
-  color: white;
-  font-family: "Poppins";
+@media only screen and (min-width: 768px) {
+  body {
+    background: black;
+    letter-spacing: 0.2em;
+    color: white;
+    font-family: "Poppins";
+  }
+  .main-name {
+    padding-top: 20vh;
+    padding-left: 20vw;
+  }
+  .main-name .name {
+    font-size: 46px;
+    letter-spacing: 0.1em;
+  }
+  .main-name .profession {
+    font-size: 26px;
+    letter-spacing: 1em;
+    line-height: 3;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-container .main-image {
+    position: relative;
+    z-index: -1;
+    width: 300px;
+    float: right;
+    top: -135px;
+    padding-right: 150px;
+  }
+  .header span {
+    font-size: 20px;
+    padding: 20px 20px;
+  }
 }
-
-.main-name {
-  font-size: 42px;
-  padding-top: 33vh;
-  padding-left: 33vw;
-}
-
-.main-image {
-  z-index: -1;
-  position: relative;
-  width: 300px;
-  padding-right: 33vw;
+.right {
   float: right;
-  top: -20vh;
+}
+
+.left {
+  float: left;
 }/*# sourceMappingURL=style.css.map */
