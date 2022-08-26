@@ -1,5 +1,10 @@
+$base-color: black;
+$primary-color: #ff9700;
+
+
+
 body {
-    background: black;
+    background: $base-color;
     letter-spacing: 0.2em;
     color: white;
     font-family: 'Poppins';
@@ -10,7 +15,7 @@ body {
 @media only screen and (min-width: 320px) {
     // For medium-sized screens devices
     body {
-        background: black;
+        background: $base-color;
         letter-spacing: 0.2em;
         color: white;
         font-family: 'Poppins';
@@ -100,7 +105,7 @@ body {
             z-index: -1;
             width: 300px;
             float: right;
-            top: 0px;
+            top: -120px;
             padding-right: 0px;
         }
     }
@@ -116,3 +121,91 @@ body {
 .left {
     float: left;
 }
+
+h1, h2, h3, h4 {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+   color: #ff9700;
+}
+.title h2 {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: $primary-color;
+    font-weight: 300;
+}
+
+.text {
+    padding-left: 40px;
+}
+
+
+.break-page {
+    page-break-before: auto;
+    margin-top: 140px;;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: $primary-color;
+}
+
+a, h2 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h2::before, a::before,
+  h2::after, a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  h2::before,a::before {
+    background-color: $primary-color;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  h2::after, a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: $primary-color;
+  }
+  
+  h2:hover::before, a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  h2:hover::after, a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  h2 span, a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  h2:hover span, a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+  
+  
