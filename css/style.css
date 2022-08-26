@@ -196,4 +196,13 @@ progress[value] {
 
 progress[value]::-webkit-progress-bar {
   background-color: #ff9700;
+}
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+}
+
+span:active {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+@import url("https://use.typekit.net/eia7dfc.css");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Bree+Serif&family=Courier+Prime:wght@400;700&family=Cutive&family=Sanchez&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  height: 100vh;
+  cursor: pointer;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1424460421773-58b49adfc68a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2850&q=80")
+    no-repeat center center/cover;
+}
+
+p {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #fdf8f3;
+  text-transform: uppercase;
+  font-size: 6em;
+  letter-spacing: 0.005em;
+  pointer-events: none;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  text-shadow: 
+
+  /*long soft bottom*/ 1px 1px 15px rgba(255, 245, 201, 0.35),
+    1px 10px 70px rgba(255, 245, 201, 0.35),
+    /*short soft bottom*/ 0px 5px 5px rgba(88, 88, 88, 0.35),
+    /*left shadow*/ -5px 5px 20px rgba(88, 88, 88, 0.35),
+    /*right shadow*/ 5px 5px 20px rgba(88, 88, 88, 0.35);
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 3em;
+  }
+}
