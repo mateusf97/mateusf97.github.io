@@ -5,6 +5,16 @@ body {
 }
 
 .main-name {
+  font-size: 42px;
   padding-top: 33vh;
-  padding-left: 33vh;
+  padding-left: 33vw;
+}
+
+.main-image {
+  z-index: -1;
+  position: relative;
+  width: 300px;
+  padding-right: 33vw;
+  float: right;
+  top: -20vh;
 }/*# sourceMappingURL=style.css.map */
