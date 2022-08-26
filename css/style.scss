@@ -6,21 +6,6 @@ body {
     user-select: none;
 }
 
-@media only screen and (max-width: 769px) {
-  
-    //smartphones
-
-        .header {
-            span {
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: initial;
-            }
-        }   
-      
-    
-}
 
 @media only screen and (min-width: 320px) {
     // For medium-sized screens devices
@@ -30,6 +15,14 @@ body {
         color: white;
         font-family: 'Poppins';
         user-select: none;
+    }
+
+    .hidden-menu {
+        display: inline;
+    }
+
+    .menu {
+        display: none;
     }
     
 
@@ -72,6 +65,49 @@ body {
 
 }
 
+@media only screen and (max-width: 769px) {
+  
+    //smartphones
+
+    .menu {
+        display: inline-block !important;
+        
+        position: fixed;
+        top: 16px;
+        right: 25px;
+    }
+
+    .hidden-menu {
+        display: none;
+    }
+
+    .header {
+        span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: initial !important;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+    }   
+
+    .image-container {
+        width: 100%;
+
+        .main-image {
+            position: relative;
+            z-index: -1;
+            width: 300px;
+            float: right;
+            top: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    
+    
+}
   
 .right {
     float: right;
