@@ -205,4 +205,9 @@ progress[value]::-webkit-progress-bar {
 
 span:active {
   background-color: black;
+}
+
+.hidden {
+  height: 0.001px;
+  width: 0.001px;
 }/*# sourceMappingURL=style.css.map */
