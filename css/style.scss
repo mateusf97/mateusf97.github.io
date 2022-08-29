@@ -40,6 +40,7 @@ body {
         .name {
             font-size: 46px;
             letter-spacing: 0.1em;
+            width: fit-content;
         }
 
         .profession {
@@ -272,5 +273,11 @@ hidden {
     display: none;
 }
 
+.box-color {
+    border: 1px solid orange;
+    margin: 30px;
+    border-radius: 0px 43px;
+    box-shadow: 6px 8px 15px 0px orange;
+}
 
 // Desenolvido por Mateus Felipe da Silva
