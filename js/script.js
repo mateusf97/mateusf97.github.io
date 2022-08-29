@@ -1,13 +1,13 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
+canvas.width = window.innerWidth - 50;
 canvas.height = window.innerHeight;
 const particlesArray = [];
 let hue = 0;
 let frame = 0;
 
 window.addEventListener('resize', function(){
-    canvas.width = window.innerWidth;
+    canvas.width = window.innerWidth - 50;
     canvas.height = window.innerHeight;
 });
 
