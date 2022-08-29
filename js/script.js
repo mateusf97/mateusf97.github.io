@@ -19,11 +19,9 @@ canvas.addEventListener('click', function(event){
     mouse.x = event.x;
     mouse.y = event.y;
     hue =30;
-    if (particlesArray.length < 50){
-          for (let i = 0; i < 50; i++){
+          for (let i = 0; i < 8; i++){
         particlesArray.push(new Particle());
       }
-    }
 });
 
 canvas.addEventListener('mousemove', function(event){
@@ -31,9 +29,9 @@ canvas.addEventListener('mousemove', function(event){
     mouse.y = event.y;
     hue = 30;
     if (frame % 2 === 0){
-      for (let i = 0; i < 2; i++){
-        particlesArray.push(new Particle());
-      }
+        for (let i = 0; i < 2; i++){
+            particlesArray.push(new Particle());
+        }
     }
 });
 
@@ -41,9 +39,9 @@ class Particle {
     constructor(){
         this.x = mouse.x;
         this.y = mouse.y;
-        this.size = Math.random() * 20 + 1;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
+        this.size = Math.random() * 60 + 1;
+        this.speedX = Math.random() * 10 - 1.5;
+        this.speedY = Math.random() * 10 - 1.5;
         this.color = 'hsl(' + hue + ', 100%, 50%)';
     }
     update(){
