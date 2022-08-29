@@ -15,11 +15,21 @@ const mouse = {
     x: undefined,
     y: undefined,
 }
+
 canvas.addEventListener('click', function(event){
     mouse.x = event.x;
     mouse.y = event.y;
     hue =30;
-          for (let i = 0; i < 8; i++){
+        for (let i = 0; i < 8; i++){
+        particlesArray.push(new Particle());
+      }
+});
+
+canvas.addEventListener('onscroll', function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+    hue =30;
+        for (let i = 0; i < 8; i++){
         particlesArray.push(new Particle());
       }
 });
@@ -34,6 +44,7 @@ canvas.addEventListener('mousemove', function(event){
         }
     }
 });
+
 
 class Particle {
     constructor(){

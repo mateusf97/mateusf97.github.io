@@ -55,8 +55,14 @@ body {
     padding: 20px 20px;
     cursor: pointer;
   }
+  .card-divider {
+    display: inline-block;
+  }
 }
 @media only screen and (max-width: 769px) {
+  #canvas1 {
+    top: 65px !important;
+  }
   .menu {
     display: inline-block !important;
     position: fixed;
@@ -119,6 +125,7 @@ h1 {
 
 .text {
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .break-page {
@@ -189,7 +196,7 @@ progress[value] {
 }
 
 .progress-bar {
-  width: 50%;
+  width: 100%;
   color: #ff9700;
   background-color: #ff9700;
 }
@@ -210,4 +217,28 @@ span:active {
 .hidden {
   height: 0.001px;
   width: 0.001px;
+}
+
+.card-divider {
+  margin-top: 10vh;
+  border: 1px solid orange;
+  border-radius: 15px 50px;
+  padding: 12px 26px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-container {
+  text-align: center;
+}
+
+#year {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

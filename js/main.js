@@ -1,3 +1,5 @@
+// Desenolvido por Mateus Felipe da Silva
+
 $(document).ready(function() {
 
     $(".menu").click(function() {
@@ -47,3 +49,5 @@ $(document).ready(function() {
 
 });
 
+
+// Desenolvido por Mateus Felipe da Silva
