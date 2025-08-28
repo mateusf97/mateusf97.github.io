@@ -51,7 +51,10 @@
             padding: 15px;
             background: #f5f5f5;
             border-radius: 10px;
-            display: none;
+            display: block;
+        }
+        .result img {
+            display: inline-block;
         }
         .logo {
             margin-bottom: 15px;
@@ -59,6 +62,10 @@
         #qrcode {
             margin-top: 20px;
         }
+        #qrcode img{
+            display: inline-block !important;
+        }
+        
     </style>
 </head>
 <body>
@@ -121,7 +128,7 @@ $(document).ready(function() {
             `);
 
             // Limpa QR Code anterior
-            $("#qrcode").html("");
+            $("#qrcode").html("").css("display","inline");
 
             // Gera novo QR Code
             let link = "https://mateusf97.github.io/certificado/success.html?cpf=" + cpfLimpo;
